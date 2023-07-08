@@ -57,6 +57,6 @@ cin >> *one >> *two >> *three;
   delete one;
   delete two;
   delete three;
-  
+  delete name;
 	return 0;
 }
