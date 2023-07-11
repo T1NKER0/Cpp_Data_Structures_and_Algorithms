@@ -1,1 +1,4 @@
-update pending
+So far, you have learned to define a class and to use member functions of the class to access the private variable members of that class. Previously, we mentioned that a private variable member of a class could be accessed by a member function, however, that is not the only way to access a private variable member.
+A function can be made a friend of a class, and thus, can be given the authority to access the private variable members of that class. In such a case, the friend function is not a class member and can be used throughout the program as an independent function.
+A friend function not only can access the private variable members, but it can also change them. One may find it tempting to define all functions used in a program friend of all classes in that program with an argument that in such a case there is no need for accessor or mutator functions.
+Although in theory this may be true, it is not practical. I am sure you can think of several good reasons for not defining all functions as friend of all classes.
