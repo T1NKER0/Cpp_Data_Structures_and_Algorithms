@@ -21,13 +21,15 @@ int main()
 	cin >> width;
 
 	// Fill in code to make lengthPtr point to length (hold its address)
-lengthPtr = &length;
+        lengthPtr = &length;
   
 	// Fill in code to make widthPtr point to width (hold its address)
-widthPtr = &width;
+        widthPtr = &width;
+
+	//&intID - access address of the variable on the memory
   
 	// Fill in code to find the area by using only the pointer variables
-area =	*lengthPtr * *widthPtr;
+        area = *lengthPtr * *widthPtr; //*dereferencing - accessing data stored in address being pointed to
 	cout << "The area is " << area << endl;
 
 	// Fill in the condition length > width by using only the pointer variables
