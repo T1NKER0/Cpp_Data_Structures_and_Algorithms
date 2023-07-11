@@ -9,6 +9,10 @@ int main()
 	float* monthSales = nullptr;	// a pointer used to point to an array
 									// holding monthly sales 
 
+	//Dynamically allocated arrays are allocated on the heap at run time. 
+	//The heap space can be assigned to global or local pointer variables that store the address of the allocated heap space 
+	//(point to the first bucket).
+
 	float total = 0;	// total of all sales
 	float average;		// average of monthly sales
 	int numOfSales;		// number of sales to be processed 
@@ -21,7 +25,7 @@ int main()
 
 	// Fill in the code to allocate memory for the array pointed to by
 	// monthSales.
-	monthSales = new float[numOfSales];
+	monthSales = new float[numOfSales]; //monthSales will now point to a float array with a size of numSales
 
 	// Fill in the condition to determine if memory has been
 		  // allocated (or eliminate this if construct if your instructor
