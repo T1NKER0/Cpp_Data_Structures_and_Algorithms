@@ -14,6 +14,12 @@ int main()
 	int *three = nullptr;
 	int result;
 
+	//We can dynamically allocate storage space while the program is running, but we cannot create new variable names "on the fly"
+        //For this reason, dynamic allocation requires two steps:
+	//1. Creating the dynamic space.
+        //2. Storing its address in a pointer (so that the space can be accesed)
+        //To dynamically allocate memory in C++, we use the new operator.
+
 	//	Fill in code to allocate the integer variable one here
 one = new int;
 	//	Fill in code to allocate the integer variable two here
@@ -29,7 +35,8 @@ name = new char();
 	for (pos = 0; pos < MAXNAME; pos++) 
 		// Fill in code to read a character into the name array
 				// WITHOUT USING a bracketed subscript
-    cin >>	*(name + pos);
+		//name is a pointer to a character array (index 0), so we add pos as the loop runs to change the index position
+    cin >> *(name + pos); 
 	cout << "Hi ";
 
 	for (pos = 0; pos < MAXNAME; pos++)
