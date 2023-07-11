@@ -31,7 +31,7 @@ int main()
 	// Fill in code to find the area by using only the pointer variables
         area = *lengthPtr * *widthPtr; //*dereferencing - accessing data stored in address being pointed to
 	cout << "The area is " << area << endl;
-
+	
 	// Fill in the condition length > width by using only the pointer variables
   if (*lengthPtr > *widthPtr)
 		cout << "The length is greater than the width" << endl;
