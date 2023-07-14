@@ -2,3 +2,7 @@ So far, you have learned to define a class and to use member functions of the cl
 A function can be made a friend of a class, and thus, can be given the authority to access the private variable members of that class. In such a case, the friend function is not a class member and can be used throughout the program as an independent function.
 A friend function not only can access the private variable members, but it can also change them. One may find it tempting to define all functions used in a program friend of all classes in that program with an argument that in such a case there is no need for accessor or mutator functions.
 Although in theory this may be true, it is not practical. I am sure you can think of several good reasons for not defining all functions as friend of all classes.
+
+Operator overloading is a compile-time polymorphism. It is an idea of giving special meaning to an existing operator in C++ without changing its original meaning.
+
+In C++, we can make operators work for user-defined classes. This means C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading. For example, we can overload an operator ‘+’ in a class like String so that we can concatenate two strings by just using +. Other example classes where arithmetic operators may be overloaded are Complex Numbers, Fractional Numbers, Big integers, etc.
